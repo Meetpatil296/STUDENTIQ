@@ -1,0 +1,88 @@
+{
+  "dataset": {
+    "raw_rows": 1840,
+    "clean_rows": 1800,
+    "train_rows": 1440,
+    "test_rows": 360
+  },
+  "accuracy": 0.7472222222222222,
+  "train_accuracy": 0.8479166666666667,
+  "cv_accuracy_mean": 0.70625,
+  "cv_accuracy_std": 0.014500425706820199,
+  "precision_macro": 0.7545788362620046,
+  "recall_macro": 0.7523148148148149,
+  "f1_macro": 0.7530787325307874,
+  "classes": [
+    "Poor",
+    "Average",
+    "Good"
+  ],
+  "confusion_matrix": [
+    [
+      92,
+      16,
+      0
+    ],
+    [
+      18,
+      101,
+      25
+    ],
+    [
+      1,
+      31,
+      76
+    ]
+  ],
+  "classification_report": {
+    "Poor": {
+      "precision": 0.8288288288288288,
+      "recall": 0.8518518518518519,
+      "f1-score": 0.8401826484018264,
+      "support": 108.0
+    },
+    "Average": {
+      "precision": 0.6824324324324325,
+      "recall": 0.7013888888888888,
+      "f1-score": 0.6917808219178082,
+      "support": 144.0
+    },
+    "Good": {
+      "precision": 0.7524752475247525,
+      "recall": 0.7037037037037037,
+      "f1-score": 0.7272727272727273,
+      "support": 108.0
+    },
+    "accuracy": 0.7472222222222222,
+    "macro avg": {
+      "precision": 0.7545788362620046,
+      "recall": 0.7523148148148149,
+      "f1-score": 0.7530787325307872,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.7473641958790475,
+      "recall": 0.7472222222222222,
+      "f1-score": 0.7469489414694894,
+      "support": 360.0
+    }
+  },
+  "feature_importance": {
+    "Study_Hours_Per_Day": 0.1012,
+    "Attendance_Percentage": 0.1595,
+    "Previous_Exam_Marks": 0.3136,
+    "Assignment_Scores": 0.1554,
+    "Internal_Assessment_Marks": 0.2025,
+    "Sleep_Hours": 0.0509,
+    "Extracurricular_Activity_Yes": 0.0095,
+    "Internet_Availability_Yes": 0.0072
+  },
+  "hyperparameters": {
+    "class_weight": "balanced",
+    "max_depth": "10",
+    "max_features": "sqrt",
+    "min_samples_leaf": "5",
+    "n_estimators": "200",
+    "random_state": "42"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "trained_at": "2026-11-02 04:49:54",
+  "sklearn_version": "1.8.0",
+  "python_version": "3.12.3",
+  "dataset": {
+    "rows_raw": 1620,
+    "columns": 10,
+    "duplicates_raw": 20,
+    "missing_by_column": {
+      "Study_Hours_Per_Day": 24,
+      "Attendance_Percentage": 24,
+      "Assignment_Scores": 24,
+      "Sleep_Hours": 24,
+      "Extracurricular_Activity": 25,
+      "Internet_Availability": 24
+    },
+    "rows_clean": 1600,
+    "duplicates_removed": 20,
+    "missing_after_cleaning": 144
+  },
+  "train_rows": 1280,
+  "test_rows": 320,
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 9,
+    "min_samples_split": 10,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "oob_score": true,
+    "random_state": 42
+  },
+  "accuracy": 0.853125,
+  "train_accuracy": 0.93515625,
+  "oob_score": 0.8640625,
+  "cv_mean": 0.84921875,
+  "cv_std": 0.015741751312195223,
+  "precision_weighted": 0.8561011904761905,
+  "recall_weighted": 0.853125,
+  "f1_weighted": 0.852947107359206,
+  "precision_macro": 0.8597883597883599,
+  "recall_macro": 0.8569658737812066,
+  "f1_macro": 0.8566074401944395,
+  "class_order": [
+    "Good",
+    "Average",
+    "Poor"
+  ],
+  "confusion_matrix": [
+    [
+      83,
+      19,
+      0
+    ],
+    [
+      7,
+      100,
+      15
+    ],
+    [
+      0,
+      6,
+      90
+    ]
+  ],
+  "classification_report": {
+    "Good": {
+      "precision": 0.9222222222222223,
+      "recall": 0.8137254901960784,
+      "f1-score": 0.8645833333333334,
+      "support": 102.0
+    },
+    "Average": {
+      "precision": 0.8,
+      "recall": 0.819672131147541,
+      "f1-score": 0.8097165991902834,
+      "support": 122.0
+    },
+    "Poor": {
+      "precision": 0.8571428571428571,
+      "recall": 0.9375,
+      "f1-score": 0.8955223880597015,
+      "support": 96.0
+    },
+    "accuracy": 0.853125,
+    "macro avg": {
+      "precision": 0.8597883597883599,
+      "recall": 0.8569658737812066,
+      "f1-score": 0.8566074401944395,
+      "support": 320.0
+    },
+    "weighted avg": {
+      "precision": 0.8561011904761905,
+      "recall": 0.853125,
+      "f1-score": 0.852947107359206,
+      "support": 320.0
+    }
+  },
+  "feature_importance": {
+    "Previous_Exam_Marks": 0.3138612747228424,
+    "Internal_Assessment_Marks": 0.21858716181326954,
+    "Assignment_Scores": 0.18955138263135968,
+    "Attendance_Percentage": 0.13571557669774678,
+    "Study_Hours_Per_Day": 0.10659980610102743,
+    "Sleep_Hours": 0.027697862326731944,
+    "Extracurricular_Activity_Yes": 0.004615599534624676,
+    "Internet_Availability_Yes": 0.0033713361723976447
+  }
+}
